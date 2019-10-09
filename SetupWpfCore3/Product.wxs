@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?define ProductName = "WpfCore3" ?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product 
+    Id="{21795C35-1FDC-4090-B0E3-048256F068C2}" 
+    Name="$(var.ProductName)"
+    Language="1041" 
+    Version="1.0.0.0" 
+    Manufacturer="WpfCore3" 
+    UpgradeCode="e9aab9b6-29ec-494c-aa97-c2a02942a188">
+
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate EmbedCab="yes" />
+
+    <Feature 
+      Id="ProductFeature" 
+      Title="WpfCore3" 
+      Description="WpfCore3"
+      Display='expand'
+      Level="1"
+    >
+			<ComponentGroupRef Id="ProductComponents" />
+    </Feature>
+
+    <UIRef Id="WixUI_Minimal" />
+    <WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
+    <Icon Id="icon.ico" SourceFile="icon.ico" />
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+          <Directory Id="INSTALLFOLDER" Name="$(var.ProductName)" />
+      </Directory>
+      <Directory Id="DesktopFolder" Name="Desktop" />
+    </Directory>
+  </Fragment>
+
+	<Fragment>
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <Component Id="WpfCore3" Guid="{C9EE5F8F-C7D8-4395-9C86-0A8FA5E32D18}">
+        <File
+          Id="WpfCore3Exe"
+          Name="WpfCore3.exe"
+          DiskId="1"
+          KeyPath="yes"
+          Source="..\WpfCore3\bin\Release\netcoreapp3.0\win10-x86\publish\WpfCore3.exe"
+          >
+          <Shortcut
+            Id="WpfCore3S"
+            Directory="DesktopFolder"
+            Name="$(var.ProductName)"
+            Advertise="yes"
+            WorkingDirectory='INSTALLDIR'
+            Icon="icon.ico" IconIndex="0"
+          />
+        </File>
+      </Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>

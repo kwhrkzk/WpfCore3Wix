@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfCore3", "WpfCore3\WpfCore3.csproj", "{9E56DBF3-0AC4-4B62-8BCF-7DB1DFC8B205}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "SetupWpfCore3", "SetupWpfCore3\SetupWpfCore3.wixproj", "{94B40E73-47EB-4132-80B6-3D12A7BB6D34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E56DBF3-0AC4-4B62-8BCF-7DB1DFC8B205}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{9E56DBF3-0AC4-4B62-8BCF-7DB1DFC8B205}.Debug|x64.ActiveCfg = Debug|x64
+		{9E56DBF3-0AC4-4B62-8BCF-7DB1DFC8B205}.Debug|x64.Build.0 = Debug|x64
+		{9E56DBF3-0AC4-4B62-8BCF-7DB1DFC8B205}.Debug|x86.ActiveCfg = Debug|x86
+		{9E56DBF3-0AC4-4B62-8BCF-7DB1DFC8B205}.Debug|x86.Build.0 = Debug|x86
+		{9E56DBF3-0AC4-4B62-8BCF-7DB1DFC8B205}.Release|Any CPU.ActiveCfg = Release|x64
+		{9E56DBF3-0AC4-4B62-8BCF-7DB1DFC8B205}.Release|Any CPU.Build.0 = Release|x64
+		{9E56DBF3-0AC4-4B62-8BCF-7DB1DFC8B205}.Release|x64.ActiveCfg = Release|x64
+		{9E56DBF3-0AC4-4B62-8BCF-7DB1DFC8B205}.Release|x64.Build.0 = Release|x64
+		{9E56DBF3-0AC4-4B62-8BCF-7DB1DFC8B205}.Release|x86.ActiveCfg = Release|x86
+		{9E56DBF3-0AC4-4B62-8BCF-7DB1DFC8B205}.Release|x86.Build.0 = Release|x86
+		{94B40E73-47EB-4132-80B6-3D12A7BB6D34}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{94B40E73-47EB-4132-80B6-3D12A7BB6D34}.Debug|x64.ActiveCfg = Debug|x86
+		{94B40E73-47EB-4132-80B6-3D12A7BB6D34}.Debug|x86.ActiveCfg = Debug|x86
+		{94B40E73-47EB-4132-80B6-3D12A7BB6D34}.Debug|x86.Build.0 = Debug|x86
+		{94B40E73-47EB-4132-80B6-3D12A7BB6D34}.Release|Any CPU.ActiveCfg = Release|x86
+		{94B40E73-47EB-4132-80B6-3D12A7BB6D34}.Release|x64.ActiveCfg = Release|x86
+		{94B40E73-47EB-4132-80B6-3D12A7BB6D34}.Release|x86.ActiveCfg = Release|x86
+		{94B40E73-47EB-4132-80B6-3D12A7BB6D34}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D0B9755-2302-4266-98C1-D077A6E46119}
+	EndGlobalSection
+EndGlobal
